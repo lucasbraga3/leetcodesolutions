@@ -2,7 +2,7 @@ class Solution {
 public:
     int minGroups(vector<vector<int>>& intervals) {
         vector<int> inic, fim;
-        for (auto&& inter : intervals) {
+        for (const auto& inter : intervals) {
             inic.push_back(inter[0]);
             fim.push_back(inter[1]);
         }
